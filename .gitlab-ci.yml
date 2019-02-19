@@ -1,0 +1,9 @@
+image: johnjz/comp2300-ci:2019-latest
+
+build-check:
+  tags:
+    - comp2300
+  script:
+    - mv /pio-proj-template/.pioenvs .
+    - pio run --disable-auto-clean
+
