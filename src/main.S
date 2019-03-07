@@ -12,6 +12,10 @@ main:
 
   @ load "COPE" into r1
   ldr r2, hops
+  add r2, r1, 5
+  ror r3, r2, 24
+  add r3, 14
+  ror r3, r3, 8
 
 loop:
   nop
